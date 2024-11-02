@@ -25,7 +25,7 @@ namespace RockPaperScissorsTests
 			Assert::AreEqual("Player1", result);
 		}
 
-		TEST_METHOD(TestPlayer2WinsRock)
+		TEST_METHOD(TestPlayer2WinsScissors)
 		{
 			const char* result = RockPaperScissors("Scissors", "Rock");
 			Assert::AreEqual("Player2", result);
