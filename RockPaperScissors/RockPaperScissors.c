@@ -25,6 +25,12 @@ const char* RockPaperScissors(const char* player1, const char* player2) {
 }
 
 int main() {
+    printf("%s\n", RockPaperScissors("Rock", "Scissors"));  //Player 1 win
+    printf("%s\n", RockPaperScissors("Paper", "Rock"));     //Player 1 win
+    printf("%s\n", RockPaperScissors("Scissors", "Paper")); //Player 1 win
+    printf("%s\n", RockPaperScissors("Rock", "Paper"));     //Player 2 win
+    printf("%s\n", RockPaperScissors("Rock", "Rock"));      //Tie
+    printf("%s\n", RockPaperScissors("Rock", "Water"));     //Invalid Input
 
     return 0;
 }
