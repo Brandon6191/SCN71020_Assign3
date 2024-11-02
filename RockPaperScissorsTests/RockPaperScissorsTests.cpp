@@ -18,5 +18,11 @@ namespace RockPaperScissorsTests
 			const char* result = RockPaperScissors("Rock", "Rock");
 			Assert::AreEqual("Tie", result);
 		}
+
+		TEST_METHOD(TestInvalidInput)
+		{
+			const char* result = RockPaperScissors("Water", "Rock");
+			Assert::AreEqual("Invalid", result);
+		}
 	};
 }
