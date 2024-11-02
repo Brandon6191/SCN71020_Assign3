@@ -19,6 +19,12 @@ namespace RockPaperScissorsTests
 			Assert::AreEqual("Tie", result);
 		}
 
+		TEST_METHOD(TestPlayer1WinsRock)
+		{
+			const char* result = RockPaperScissors("Rock", "Scissors");
+			Assert::AreEqual("Player1", result);
+		}
+
 		TEST_METHOD(TestInvalidInput)
 		{
 			const char* result = RockPaperScissors("Water", "Rock");
